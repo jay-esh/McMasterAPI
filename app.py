@@ -1,11 +1,12 @@
-import os
-from flask import Flask, render_template, request, url_for, redirect
-from flask_sqlalchemy import SQLAlchemy
+# import os
+from flask import Flask, request, session
+from flask_cors import CORS
+# from flask_sqlalchemy import SQLAlchemy
 
 
 # from sqlalchemy.sql import func
 
-basedir = os.path.abspath(os.path.dirname(__file__))
+# basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
 app.config['TESTING'] = True

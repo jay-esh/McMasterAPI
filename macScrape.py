@@ -1,12 +1,12 @@
-from cgitb import html
-from dis import dis
-from faulthandler import disable
-from html.parser import HTMLParser
-from warnings import catch_warnings
-from bs4 import BeautifulSoup as bs
+# from cgitb import html
+# from dis import dis
+# from faulthandler import disable
+# from html.parser import HTMLParser
+# from warnings import catch_warnings
+# from bs4 import BeautifulSoup as bs
 import requests
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+# from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 DRIVER_PATH = './chromedriver'

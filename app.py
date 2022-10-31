@@ -14,7 +14,9 @@ db.init_app(app)
 cors  = CORS(app, resources={r"/api/*": {"origin": "*"}})
 
 class Courses(db.Model):
-    name = db.Column(db.String(150), primary_key=True)
+    cousreId = db.Column(db.String(50), primary_key=True)
+    courseFullName = db.Column(db.String(150), nullable=False)
+    units = db.Column(db.String(50), nullable=False)
     description = db.Column(db.String(600), nullable=False)
 
 

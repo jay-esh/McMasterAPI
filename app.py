@@ -31,7 +31,8 @@ class Home(Resource):
 
 class CourseDetails(Resource):
     def get(self, id):
-        course = db.get_or_404(Courses, id)
+
+        course = db.get_or_404(Courses, id.capitalize())
         ans = {
             "courseFullName": course.courseFullName,
             "units": course.units,
